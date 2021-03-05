@@ -2,7 +2,24 @@ FASTAUTH - A RestAPI to Use Query Firebase auth with JSON
 
 Didn't Get It ?
 Simply It will generate /register /login endpoints just send email and password of user on It with POST Request and Voila!! 
-User Created and Response Gives you AuthToken which can further be used as AUTH Token in Your project
+User Created and Response Gives you idToken which can further be used as AUTH Token in Your project
+So Use idToken as point of validation in ur projects and sync using refreshtoken to get session info
+
+REST-API Endpoints with their Inputs : (Refer POSTMAN Folder to see Screenshots)
+        GET     / - Default Endpoint 
+        POST    /register Signup user to Google Send below json email and password
+                        { "email":"usermail@gmail.com","password":"userpass"  }
+        POST    /login Login user to Google Send below json email and password
+                        { "email":"usermail@gmail.com","password":"userpass" }
+        POST    /userinfo Get User Details like email,status send idToken recieved in Regsiter or Login
+                        {  "idToken":"TokenHere" }
+        POST    /sync Get user details of current user from refreshtoken it return idToken
+                        { "refresh_token":"TokenHere" }
+        POST    /emailverify Send EMail verification request on User email 
+                        { "idToken":"TokenHere" }
+        
+Reference for refreshToken https://developers.google.com/identity/toolkit/reference/securetoken/rest/v1/token
+Reference for GoogleAuth Functions I have used IdentityToolkit https://cloud.google.com/identity-platform/docs/use-rest-api
 
 CONFIG Requirements: Add configs here config/google.config.ts
 1) googleapikey = Add your projects Web Apikey
