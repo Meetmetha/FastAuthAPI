@@ -12,11 +12,14 @@ CONFIG Requirements: Add configs here config/google.config.ts
 Usage: 
 Clone Repository
 npm install
+change process.env.PORT to 8000 on line 33 file src/main.ts
 npm run start 
 
 "Remember to add Config variables"
 
 Deployment on Heroku:
 Once your app is working on your localhost
-Open file src/main.ts on line 33 instead of port number 8000 Enter process.env.port ( await app.listen(process.env.PORT, '0.0.0.0');)
+Open file src/main.ts on line 33 verify if port is process.env.PORT ( await app.listen(process.env.PORT, '0.0.0.0');)
 Thats It procfile is already so you are done 
+
+Reach me at https://miteshmetha.com or admin@miteshmetha.com for issues or Extending It 
