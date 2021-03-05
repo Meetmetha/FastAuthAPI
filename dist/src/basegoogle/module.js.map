@@ -1,1 +1,0 @@
-{"version":3,"file":"module.js","sourceRoot":"","sources":["../../../src/basegoogle/module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAoD;AACpD,+CAAqD;AACrD,oEAAiE;AAOjE,IAAa,gBAAgB,GAA7B,MAAa,gBAAgB;CAAG,CAAA;AAAnB,gBAAgB;IAL5B,eAAM,CAAC;QACN,OAAO,EAAE,CAAC,mBAAU,CAAC;QACrB,WAAW,EAAE,CAAC,kCAAoB,CAAC;QACnC,SAAS,EAAC,CAAC,qCAAiB,CAAC;KAC9B,CAAC;GACW,gBAAgB,CAAG;AAAnB,4CAAgB"}
